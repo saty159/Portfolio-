@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyabrat Pandey | Full Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Satyabrat Pandey — Computer Science Engineering student at LPU, aspiring Full Stack Developer, and AI enthusiast building modern web applications.">
+  <meta name="keywords" content="Satyabrat Pandey, Full Stack Developer, Software Engineer, AI, React, Node.js, LPU, Portfolio">
+  <meta name="author" content="Satyabrat Pandey">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Satyabrat Pandey — Full Stack Developer & AI Enthusiast">
+  <meta property="og:description" content="Building modern web applications and AI-powered products that solve real-world problems.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Apple & SaaS Typography (Plus Jakarta Sans, Inter, JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Desktop Glow Cursor -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursor-glow-dot" class="cursor-glow-dot" aria-hidden="true"></div>
+
+  <!-- Ambient Subtle Grid Background -->
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Satyabrat Pandey Home">
+        <span class="brand-monogram">SP</span>
+        <span class="brand-name">satyabrat<span class="accent-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="desktop-nav" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action Buttons -->
+      <div class="nav-actions">
+        <!-- Interactive Terminal Trigger -->
+        <button class="icon-btn" id="terminal-toggle" title="Open Interactive CLI Terminal" aria-label="Toggle Terminal">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </button>
+
+        <!-- Download CV Header Button -->
+        <button class="btn btn-primary btn-sm resume-download-trigger" id="nav-download-cv">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#certifications" class="mobile-link">Certifications</a>
+        <a href="#achievements" class="mobile-link">Achievements</a>
+        <a href="#leadership" class="mobile-link">Leadership</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-primary w-full resume-download-trigger" id="mobile-download-cv">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Resume</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Left: Copy & Call-To-Actions -->
+        <div class="hero-text-block">
+          <!-- Availability Label -->
+          <div class="availability-pill" id="hero-availability">
+            <span class="status-pulse-dot"></span>
+            <span class="availability-text">Open to Internship Opportunities</span>
+          </div>
+
+          <div class="hero-greeting" id="hero-greeting">HELLO, I'M SATYABRAT PANDEY.</div>
+
+          <h1 class="hero-headline">
+            <span class="headline-part">Building Digital Experiences.</span>
+            <span class="headline-part accent-gradient">Turning Ideas Into Reality.</span>
+          </h1>
+
+          <!-- Dynamic Typing Roles -->
+          <div class="typing-roles-wrapper">
+            <span class="typing-prefix">Specializing in: </span>
+            <span class="typing-text" id="typewriter-roles"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description" id="hero-description">
+            I'm a Computer Science Engineering student passionate about Full Stack Development, Artificial Intelligence, and building meaningful digital products.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow" id="cta-explore-work">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <button class="btn btn-secondary resume-download-trigger" id="cta-download-resume">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download My Resume</span>
+            </button>
+          </div>
+
+          <!-- Social Icons & Quick Channels -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile" title="GitHub /saty159">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/satyabrat-pandey-660878313" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile" title="LinkedIn /satyabrat-pandey">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:satyabrat.pandey.dev@gmail.com" class="social-icon-link" aria-label="Email Satyabrat" title="Email: satyabrat.pandey.dev@gmail.com">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Professional Developer Visual Workspace Element -->
+        <div class="hero-visual-block">
+          <div class="developer-workspace-card">
+            <!-- Terminal Header -->
+            <div class="ws-header">
+              <div class="window-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <div class="ws-title">satyabrat@lpu-cse: ~/workspace/portfolio</div>
+              <span class="ws-badge">v2.4 LTS</span>
+            </div>
+
+            <!-- Terminal Code Feed -->
+            <div class="ws-body">
+              <div class="code-line comment">// Engineering student &amp; product builder</div>
+              <div class="code-line">
+                <span class="kwd">const</span> <span class="var-name">developer</span> = {
+              </div>
+              <div class="code-line indent">
+                <span class="prop">name</span>: <span class="str">"Satyabrat Pandey"</span>,
+              </div>
+              <div class="code-line indent">
+                <span class="prop">university</span>: <span class="str">"Lovely Professional University"</span>,
+              </div>
+              <div class="code-line indent">
+                <span class="prop">degree</span>: <span class="str">"B.Tech CSE (2024 - 2028)"</span>,
+              </div>
+              <div class="code-line indent">
+                <span class="prop">cgpa</span>: <span class="num">7.44</span>,
+              </div>
+              <div class="code-line indent">
+                <span class="prop">focus</span>: [<span class="str">"Full-Stack"</span>, <span class="str">"AI Integration"</span>, <span class="str">"Backend"</span>],
+              </div>
+              <div class="code-line indent">
+                <span class="prop">status</span>: <span class="accent-text"><span class="pulse-inline">●</span> "Open to Internship Opportunities"</span>
+              </div>
+              <div class="code-line">};</div>
+              <div class="code-line spacer"></div>
+              <div class="code-line comment">// Active build pipeline</div>
+              <div class="code-line command-row">
+                <span class="prompt-symbol">➜</span> <span class="cmd">git status -s</span>
+              </div>
+              <div class="code-line status-output">
+                <span class="git-status-m">M</span> src/projects/AarogyaProtect.ai<br>
+                <span class="git-status-m">M</span> src/projects/AwasBooking.react<br>
+                <span class="git-status-a">A</span> src/security/AuthSessionEngine.js
+              </div>
+            </div>
+
+            <!-- Card Bottom Telemetry -->
+            <div class="ws-footer">
+              <div class="telemetry-item">
+                <span class="telem-label">LOCATION:</span>
+                <span class="telem-value">Gorakhpur / Punjab, India</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telem-label">GITHUB:</span>
+                <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="telem-link">github.com/saty159</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">BIOGRAPHY &amp; PROFILE</span>
+        </div>
+        <h2 class="section-heading">A Little About Me</h2>
+        <div class="heading-divider"></div>
+
+        <div class="about-grid">
+          <!-- Main Professional Bio -->
+          <div class="about-bio-card card-surface">
+            <div class="bio-intro-quote">
+              "I build modern web applications and AI-powered products that solve real-world problems. I enjoy turning ideas into functional, scalable, and user-friendly digital experiences."
+            </div>
+            
+            <div class="bio-paragraphs">
+              <p>
+                I'm a Computer Science Engineering student at <strong>Lovely Professional University</strong> with a strong interest in software development, backend engineering, and artificial intelligence.
+              </p>
+              <p>
+                I enjoy building practical applications, experimenting with modern technologies, and exploring how AI can improve everyday experiences. My development journey includes working on AI-powered applications, responsive web platforms, backend authentication systems, and database-driven projects.
+              </p>
+              <p>
+                Beyond coding, I am interested in entrepreneurship, leadership, branding, and building technology-driven products that deliver meaningful utility.
+              </p>
+            </div>
+
+            <div class="about-highlights-row">
+              <div class="highlight-chip">
+                <span class="chip-icon">🎓</span>
+                <div class="chip-content">
+                  <span class="chip-title">Education</span>
+                  <span class="chip-sub">B.Tech CSE @ LPU</span>
+                </div>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">📊</span>
+                <div class="chip-content">
+                  <span class="chip-title">Academic CGPA</span>
+                  <span class="chip-sub">7.44 / 10.0</span>
+                </div>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">📍</span>
+                <div class="chip-content">
+                  <span class="chip-title">Location</span>
+                  <span class="chip-sub">Gorakhpur / Punjab</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Facts Column -->
+          <div class="about-meta-card card-surface">
+            <h3 class="meta-card-title">Profile Snapshot</h3>
+            <div class="meta-list">
+              <div class="meta-row">
+                <span class="meta-label">Degree</span>
+                <span class="meta-value">B.Tech CSE</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">University</span>
+                <span class="meta-value">Lovely Professional University</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Graduation</span>
+                <span class="meta-value">Class of 2028</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">CGPA</span>
+                <span class="meta-value accent-highlight">7.44 / 10</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Primary Roles</span>
+                <span class="meta-value">Full Stack &amp; AI</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Hometown</span>
+                <span class="meta-value">Gorakhpur, Uttar Pradesh</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Current Status</span>
+                <span class="meta-value text-green">Available for Internships</span>
+              </div>
+            </div>
+
+            <div class="meta-card-footer">
+              <button class="btn btn-secondary w-full resume-download-trigger">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Verified Resume</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">CORE CAPABILITIES</span>
+        </div>
+        <h2 class="section-heading">Technical Skills</h2>
+        <p class="section-subheading">Organized by core engineering disciplines. No arbitrary percentages — just solid, honest tool proficiency.</p>
+        <div class="heading-divider"></div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Dynamically populated from portfolio.config.js with fallback -->
+          <div class="skill-category-card card-surface">
+            <div class="category-header">
+              <div class="cat-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card card-surface">
+            <div class="category-header">
+              <div class="cat-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <h3 class="category-title">Frontend</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Responsive UI</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card card-surface">
+            <div class="category-header">
+              <div class="cat-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </div>
+              <h3 class="category-title">Backend</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Session Auth</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card card-surface">
+            <div class="category-header">
+              <div class="cat-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h3 class="category-title">Databases</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Mongoose ODM</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card card-surface">
+            <div class="category-header">
+              <div class="cat-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3 class="category-title">Developer Tools</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">npm</span>
+              <span class="skill-tag">Vercel</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card card-surface">
+            <div class="category-header">
+              <div class="cat-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <h3 class="category-title">CS Fundamentals</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">Data Structures &amp; Algorithms</span>
+              <span class="skill-tag">Object-Oriented Programming</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">Computer Networks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">PORTFOLIO WORK</span>
+        </div>
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-subheading">Explore real applications built with clean architecture, modern frontend frameworks, and AI integration.</p>
+        <div class="heading-divider"></div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters-bar" id="project-filters">
+          <button class="filter-tab active" data-filter="all">All Projects (4)</button>
+          <button class="filter-tab" data-filter="ai">AI / Healthcare</button>
+          <button class="filter-tab" data-filter="web">Web Development</button>
+          <button class="filter-tab" data-filter="backend">Backend &amp; Security</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Aarogya Protect -->
+          <article class="project-card card-surface" data-category="ai" id="card-aarogya">
+            <div class="project-media-wrap">
+              <img src="./assets/aarogya.jpg" alt="Aarogya Protect - AI Medical Report Explainer Dashboard" class="project-thumbnail" loading="lazy">
+              <span class="project-tag-pill">AI Healthcare</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header-row">
+                <span class="project-category-name">AI / Healthcare / Full Stack</span>
+                <button class="blueprint-quickview-btn" data-project="aarogya-protect" title="View Full Blueprint">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  <span>Quick View</span>
+                </button>
+              </div>
+              <h3 class="project-card-title">Aarogya Protect</h3>
+              <p class="project-card-desc">
+                An AI-powered medical report explainer that helps users understand medical reports in simple language.
+              </p>
+              <div class="project-features-list">
+                <div class="feature-item">✓ Medical report explanation in plain language</div>
+                <div class="feature-item">✓ User-friendly interface &amp; prescription insights</div>
+                <div class="feature-item">✓ Basic medicine info, uses &amp; precautions</div>
+                <div class="feature-item">✓ AI-powered response generation via Gemini API</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Gemini API</span>
+              </div>
+              <div class="project-actions-row">
+                <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Aarogya Protect on GitHub">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Awas -->
+          <article class="project-card card-surface" data-category="web" id="card-awas">
+            <div class="project-media-wrap">
+              <img src="./assets/awas.svg" alt="Awas - Hotel and Short-Stay Booking Platform" class="project-thumbnail" loading="lazy">
+              <span class="project-tag-pill">Booking Platform</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header-row">
+                <span class="project-category-name">Web Development / Booking</span>
+                <button class="blueprint-quickview-btn" data-project="awas" title="View Full Blueprint">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  <span>Quick View</span>
+                </button>
+              </div>
+              <h3 class="project-card-title">Awas</h3>
+              <p class="project-card-desc">
+                A hotel and short-stay booking platform designed to help students and travelers discover affordable accommodation.
+              </p>
+              <div class="project-features-list">
+                <div class="feature-item">✓ Hotel &amp; student stay discovery</div>
+                <div class="feature-item">✓ Budget-friendly accommodation search</div>
+                <div class="feature-item">✓ Responsive user interface</div>
+                <div class="feature-item">✓ Easy navigation &amp; booking-oriented flow</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <div class="project-actions-row">
+                <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Awas on GitHub">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Authentication & Session Management System -->
+          <article class="project-card card-surface" data-category="backend" id="card-auth">
+            <div class="project-media-wrap">
+              <img src="./assets/auth.svg" alt="Authentication and Session Management System Console" class="project-thumbnail" loading="lazy">
+              <span class="project-tag-pill">Backend Security</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header-row">
+                <span class="project-category-name">Backend &amp; Security</span>
+                <button class="blueprint-quickview-btn" data-project="auth-session-system" title="View Full Blueprint">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  <span>Quick View</span>
+                </button>
+              </div>
+              <h3 class="project-card-title">Authentication &amp; Session Management System</h3>
+              <p class="project-card-desc">
+                A backend authentication system implementing secure login functionality and session-based user management.
+              </p>
+              <div class="project-features-list">
+                <div class="feature-item">✓ User authentication &amp; session management</div>
+                <div class="feature-item">✓ Secure cookie handling (HttpOnly, SameSite)</div>
+                <div class="feature-item">✓ Password hashing using bcrypt</div>
+                <div class="feature-item">✓ MongoDB integration &amp; server-side validation</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Mongoose</span>
+                <span class="tech-tag">Sessions</span>
+                <span class="tech-tag">bcrypt</span>
+              </div>
+              <div class="project-actions-row">
+                <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Auth System on GitHub">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Interactive Image Gallery -->
+          <article class="project-card card-surface" data-category="web" id="card-gallery">
+            <div class="project-media-wrap">
+              <img src="./assets/gallery.svg" alt="Interactive Image Gallery Lightbox Application" class="project-thumbnail" loading="lazy">
+              <span class="project-tag-pill">Frontend UI</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header-row">
+                <span class="project-category-name">Frontend &amp; Responsive UI</span>
+                <button class="blueprint-quickview-btn" data-project="image-gallery" title="View Full Blueprint">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  <span>Quick View</span>
+                </button>
+              </div>
+              <h3 class="project-card-title">Interactive Image Gallery</h3>
+              <p class="project-card-desc">
+                A responsive JavaScript-based image gallery with dynamic image loading and interactive navigation.
+              </p>
+              <div class="project-features-list">
+                <div class="feature-item">✓ High-efficiency lazy loading</div>
+                <div class="feature-item">✓ Responsive multi-device image layout</div>
+                <div class="feature-item">✓ Smooth hardware-accelerated transitions</div>
+                <div class="feature-item">✓ Full keyboard navigation (Arrow keys, Esc)</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions-row">
+                <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Image Gallery on GitHub">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer-cta">
+          <p>Want to see more code or explore early experiments?</p>
+          <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Explore All Repositories on GitHub</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION TIMELINE SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">ACADEMIC JOURNEY</span>
+        </div>
+        <h2 class="section-heading">Education</h2>
+        <p class="section-subheading">Formal foundation in Computer Science and Engineering.</p>
+        <div class="heading-divider"></div>
+
+        <div class="timeline-container">
+          <!-- LPU -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card card-surface">
+              <div class="timeline-header-block">
+                <div>
+                  <h3 class="timeline-institution">Lovely Professional University</h3>
+                  <div class="timeline-degree">B.Tech – Computer Science and Engineering</div>
+                  <div class="timeline-location">📍 Phagwara, Punjab, India</div>
+                </div>
+                <div class="timeline-meta-box">
+                  <span class="timeline-period-badge">August 2024 – August 2028</span>
+                  <div class="timeline-cgpa-pill">CGPA: 7.44 / 10</div>
+                </div>
+              </div>
+              <p class="timeline-narrative">
+                Pursuing rigorous undergraduate coursework in core computer science, focusing on data structures, object-oriented systems, database architecture, and full-stack engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Class XII -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card card-surface">
+              <div class="timeline-header-block">
+                <div>
+                  <h3 class="timeline-institution">AATMDEEP VIDYALAYA</h3>
+                  <div class="timeline-degree">Senior Secondary – Class XII</div>
+                  <div class="timeline-location">📍 Gorakhpur, Uttar Pradesh</div>
+                </div>
+                <div class="timeline-meta-box">
+                  <span class="timeline-period-badge">2023 – 2024</span>
+                </div>
+              </div>
+              <p class="timeline-narrative">
+                Completed Senior Secondary education with a solid concentration in Physics, Chemistry, and Mathematics (PCM).
+              </p>
+            </div>
+          </div>
+
+          <!-- Class X -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card card-surface">
+              <div class="timeline-header-block">
+                <div>
+                  <h3 class="timeline-institution">AATMDEEP VIDYALAYA</h3>
+                  <div class="timeline-degree">Secondary – Class X</div>
+                  <div class="timeline-location">📍 Gorakhpur, Uttar Pradesh</div>
+                </div>
+                <div class="timeline-meta-box">
+                  <span class="timeline-period-badge">2021 – 2022</span>
+                </div>
+              </div>
+              <p class="timeline-narrative">
+                Completed secondary schooling establishing strong analytical foundations in science and mathematics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TRAINING & CERTIFICATIONS SECTION -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">VERIFIED CREDENTIALS</span>
+        </div>
+        <h2 class="section-heading">Training and Certifications</h2>
+        <p class="section-subheading">Industry job simulations, specialized algorithmic coursework, and database certifications.</p>
+        <div class="heading-divider"></div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card card-surface">
+            <div class="cert-top-row">
+              <span class="cert-badge">Academic Specialization</span>
+              <span class="cert-date">Aug 2025 – Feb 2026</span>
+            </div>
+            <h3 class="cert-name">Data Structures and Algorithms in C++</h3>
+            <div class="cert-org">Lovely Professional University</div>
+            <p class="cert-desc">
+              Comprehensive problem solving covering arrays, linked lists, trees, graphs, sorting algorithms, and dynamic programming in modern C++.
+            </p>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card card-surface">
+            <div class="cert-top-row">
+              <span class="cert-badge">Industry Credential</span>
+              <span class="cert-date">April 2026</span>
+            </div>
+            <h3 class="cert-name">Infosys Springboard Certification</h3>
+            <div class="cert-org">Infosys Springboard</div>
+            <p class="cert-desc">
+              Validated training in modern software engineering principles, modular programming methodologies, and application development workflows.
+            </p>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card card-surface">
+            <div class="cert-top-row">
+              <span class="cert-badge">Database Architecture</span>
+              <span class="cert-date">Verified Course</span>
+            </div>
+            <h3 class="cert-name">SQL and Relational Databases 101</h3>
+            <div class="cert-org">IBM Developer Skills Network</div>
+            <p class="cert-desc">
+              Foundational understanding of relational database design, SQL querying, multi-table joins, subqueries, and table constraint management.
+            </p>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card card-surface">
+            <div class="cert-top-row">
+              <span class="cert-badge">Job Simulation</span>
+              <span class="cert-date">August 2025</span>
+            </div>
+            <h3 class="cert-name">Software Engineering Job Simulation</h3>
+            <div class="cert-org">Accenture Forage</div>
+            <p class="cert-desc">
+              Practical simulation focusing on software requirements analysis, code refactoring, architecture review, and client engineering advisory.
+            </p>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card card-surface">
+            <div class="cert-top-row">
+              <span class="cert-badge">Job Simulation</span>
+              <span class="cert-date">September 2025</span>
+            </div>
+            <h3 class="cert-name">Software Engineering Job Simulation</h3>
+            <div class="cert-org">Deloitte Forage</div>
+            <p class="cert-desc">
+              Hands-on simulation exploring enterprise software life cycle, technology consulting, testing automation, and cyber security fundamentals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">COMPETITIVE MILESTONES</span>
+        </div>
+        <h2 class="section-heading">Achievements</h2>
+        <p class="section-subheading">Hackathons and competitive programming challenges.</p>
+        <div class="heading-divider"></div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1 -->
+          <div class="achievement-card card-surface">
+            <div class="achievement-icon-box">🏆</div>
+            <div class="achievement-body">
+              <div class="achievement-type-badge">24-Hour Hackathon</div>
+              <h3 class="achievement-title">Nebula Hacks 2025</h3>
+              <p class="achievement-desc">
+                Participated in a fast-paced 24-hour national hackathon focused on innovation, prototype building, and practical problem-solving under tight constraints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="achievement-card card-surface">
+            <div class="achievement-icon-box">⚡</div>
+            <div class="achievement-body">
+              <div class="achievement-type-badge">Competitive Coding Challenge</div>
+              <h3 class="achievement-title">Code Hunt – AdVITyA'25, IIT Ropar</h3>
+              <p class="achievement-desc">
+                Participated in a competitive algorithmic coding challenge with <strong>Team Achievers</strong>, tackling data structure problems and optimized algorithmic logic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. LEADERSHIP & ACTIVITIES SECTION -->
+    <section class="section leadership-section" id="leadership">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">COMMUNITY &amp; LEADERSHIP</span>
+        </div>
+        <h2 class="section-heading">Leadership and Activities</h2>
+        <p class="section-subheading">Public speaking, peer mentorship, and social impact projects.</p>
+        <div class="heading-divider"></div>
+
+        <div class="leadership-grid">
+          <!-- Leadership 1: Converse E-Plus -->
+          <div class="leadership-card card-surface">
+            <div class="lead-header">
+              <span class="lead-role-pill">Executive Leadership</span>
+              <h3 class="lead-role-title">Vice President</h3>
+              <div class="lead-org">Converse E-Plus (English Speaking Group)</div>
+            </div>
+            <p class="lead-intro">
+              Spearheading peer communication, public speaking workshops, and campus-wide event coordination.
+            </p>
+            <ul class="lead-responsibilities">
+              <li>Organizing debates, impromptu speaking sessions, and group discussions to help peers develop clear verbal communication skills.</li>
+              <li>Leading student volunteer teams for campus events, ensuring reliable cross-functional coordination.</li>
+              <li>Mentoring first-year students to overcome public speaking apprehension and present ideas confidently.</li>
+            </ul>
+          </div>
+
+          <!-- Leadership 2: Cyber Security Awareness -->
+          <div class="leadership-card card-surface">
+            <div class="lead-header">
+              <span class="lead-role-pill">Community Development</span>
+              <h3 class="lead-role-title">Community Volunteer &amp; Educator</h3>
+              <div class="lead-org">Cyber Security Awareness – Community Development Project, LPU</div>
+            </div>
+            <p class="lead-intro">
+              Conducting educational outreach on cyber hygiene, digital privacy, and online safety.
+            </p>
+            <ul class="lead-responsibilities">
+              <li>Conducted structured cybersecurity awareness sessions for children and community members.</li>
+              <li>Educated participants on real-world risks: phishing detection, strong credential management, and safe browsing.</li>
+              <li>Promoted responsible digital practices and basic cyber defense techniques tailored for non-technical users.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. INTERESTS & PROFESSIONAL GOALS SECTION -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">PASSION &amp; AMBITION</span>
+        </div>
+        <h2 class="section-heading">Interests &amp; Professional Goals</h2>
+        <div class="heading-divider"></div>
+
+        <div class="interests-container card-surface">
+          <h3 class="interests-title">Core Areas of Interest</h3>
+          <div class="interests-pills-row">
+            <span class="interest-pill"><span class="pill-dot"></span> Artificial Intelligence</span>
+            <span class="interest-pill"><span class="pill-dot"></span> Full Stack Development</span>
+            <span class="interest-pill"><span class="pill-dot"></span> Backend Engineering</span>
+            <span class="interest-pill"><span class="pill-dot"></span> Software Development</span>
+            <span class="interest-pill"><span class="pill-dot"></span> Entrepreneurship</span>
+            <span class="interest-pill"><span class="pill-dot"></span> Product Building</span>
+            <span class="interest-pill"><span class="pill-dot"></span> Technology and Innovation</span>
+          </div>
+
+          <div class="career-objective-card">
+            <div class="objective-header">
+              <span class="objective-badge">CAREER OBJECTIVE</span>
+            </div>
+            <blockquote class="objective-quote">
+              "To become a skilled software engineer and product builder, contributing to impactful technology solutions while continuously improving my engineering and problem-solving abilities."
+            </blockquote>
+            <div class="objective-author">— Satyabrat Pandey</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">COMMUNICATION</span>
+        </div>
+        <h2 class="section-heading">Have an Idea? Let's Build Something Together.</h2>
+        <p class="section-subheading">
+          I'm always interested in connecting with developers, recruiters, founders, and people building innovative products.
+        </p>
+        <div class="heading-divider"></div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Channels & Socials -->
+          <div class="contact-channels-card card-surface">
+            <h3 class="channels-title">Direct Channels</h3>
+            <p class="channels-sub">
+              Feel free to reach out directly via email or connect with me on professional networks.
+            </p>
+
+            <div class="channel-rows-list">
+              <!-- Email -->
+              <div class="channel-row">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">Email Address</span>
+                  <a href="mailto:satyabrat.pandey.dev@gmail.com" class="channel-link" id="contact-email-link">satyabrat.pandey.dev@gmail.com</a>
+                </div>
+                <button class="copy-channel-btn" data-copy="satyabrat.pandey.dev@gmail.com" title="Copy Email">Copy</button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="channel-row">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/satyabrat-pandey-660878313" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/satyabrat-pandey</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="channel-row">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">GitHub</span>
+                  <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/saty159</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="channel-row">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">Location</span>
+                  <span class="channel-static">Gorakhpur / Punjab, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Config Notice -->
+            <div class="config-callout">
+              <span class="config-icon">⚙️</span>
+              <span class="config-text">All personal details and social links are managed via <code>portfolio.config.js</code></span>
+            </div>
+          </div>
+
+          <!-- Right: Direct Message Dispatcher -->
+          <div class="contact-form-card card-surface">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-grid-row">
+                <div class="form-field">
+                  <label for="user-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
+                  <span class="field-error" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-field">
+                  <label for="user-email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="user-email" name="email" class="form-input" placeholder="alex@company.com" required>
+                  <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="user-subject" class="form-label">Subject / Purpose <span class="required">*</span></label>
+                <select id="user-subject" name="subject" class="form-select" required>
+                  <option value="" disabled selected>Select an inquiry topic...</option>
+                  <option value="Internship Opportunity">Internship Opportunity</option>
+                  <option value="Full Stack Project Collaboration">Full Stack Project Collaboration</option>
+                  <option value="AI / Healthcare Application Inquiry">AI / Healthcare Application Inquiry</option>
+                  <option value="General Tech Chat & Mentorship">General Tech Chat &amp; Mentorship</option>
+                </select>
+                <span class="field-error" id="subject-error">Please select a subject.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="user-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="user-message" name="message" class="form-textarea" rows="4" placeholder="Hi Satyabrat, I came across your portfolio and wanted to discuss..." required></textarea>
+                <span class="field-error" id="message-error">Please write a message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow w-full" id="submit-contact-btn">
+                <span>Send Message Directly</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <div class="form-notice">
+                <span>Direct client dispatcher: Prepares an email directly to Satyabrat with your input.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="brand-monogram">SP</span>
+          <span class="brand-name">satyabrat<span class="accent-text">.dev</span></span>
+        </a>
+        <p class="footer-tagline">
+          Full Stack Developer | AI Enthusiast | CSE Student at Lovely Professional University.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/satyabrat-pandey-660878313" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="mailto:satyabrat.pandey.dev@gmail.com" class="footer-link">Email</a>
+        <button class="footer-link resume-download-trigger" style="background:none;border:none;cursor:pointer;">Resume (PDF)</button>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copy">© 2026 Satyabrat Pandey. Built with precision, performance, and clean code.</div>
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+          <span>Top</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BLUEPRINT QUICKVIEW MODAL -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog card-surface">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge" id="modal-category">Project Blueprint</span>
+          <h3 class="modal-title" id="modal-title">Project Name</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-wrap">
+          <img src="" alt="" id="modal-img" class="modal-image">
+        </div>
+        <div class="modal-section">
+          <h4>Overview</h4>
+          <p id="modal-desc">Project description.</p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Features &amp; Architecture</h4>
+          <ul class="modal-feature-list" id="modal-features">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Technologies</h4>
+          <div class="modal-tech-tags" id="modal-tech">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/saty159" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-github-link">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>View on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE CLI TERMINAL DRAWER -->
+  <div class="terminal-drawer" id="cli-terminal" aria-hidden="true">
+    <div class="terminal-drawer-card card-surface">
+      <div class="terminal-header-bar">
+        <div class="window-controls">
+          <button class="control-dot red" id="terminal-close-dot" aria-label="Close Terminal"></button>
+          <span class="control-dot yellow"></span>
+          <span class="control-dot green"></span>
+        </div>
+        <div class="terminal-tab-title">satyabrat@dev: ~/portfolio-cli</div>
+        <span class="terminal-esc-hint">Press ESC to exit</span>
+      </div>
+      <div class="terminal-screen" id="terminal-output">
+        <div class="term-line term-banner">
+  ____        _             _                _   
+ / ___|  __ _| |_ _   _  __| |__  _ __ __ _ | |_ 
+ \___ \ / _` | __| | | |/ _` | '_ \| '__/ _` || __|
+  ___) | (_| | |_| |_| | (_| | |_) | | | (_| || |_ 
+ |____/ \__,_|\__|\__, |\__,_|_.__/|_|  \__,_| \__|
+                  |___/                             
+        </div>
+        <div class="term-line term-dim">Welcome to Satyabrat Pandey's interactive developer console.</div>
+        <div class="term-line term-dim">Type <span class="term-accent">help</span> for commands, or explore <span class="term-accent">skills</span>, <span class="term-accent">projects</span>, <span class="term-accent">education</span>, <span class="term-accent">contact</span>.</div>
+      </div>
+      <div class="terminal-prompt-bar">
+        <span class="term-prompt-label">visitor@satyabrat:~$</span>
+        <input type="text" id="terminal-cli-input" class="term-cli-input" spellcheck="false" autocomplete="off" aria-label="Terminal command line input">
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST ALERTS CONTAINER -->
+  <div class="toast-hub" id="toast-hub" aria-live="polite"></div>
+
+  <!-- Load Central Configuration & Application Engine -->
+  <script src="portfolio.config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
